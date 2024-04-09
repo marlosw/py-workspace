@@ -44,5 +44,8 @@ if __name__ == "__main__":
     service = EmbrapaService(repo)  
     service.processarDadosProducao()  
     service.processarDadosProcessamento() 
-    service.processarArquivoComercializacao()
+    service.processarDadosComercializacao()
+    service.processarDadosImportacao()
+    service.processarDadosExportacao()
+
     uvicorn.run(app, host="0.0.0.0", port=8000)
